@@ -48,4 +48,3 @@ Beyond the structured report pages, a secondary view let stakeholders ask custom
 
 ---
 
-*Part of a broader portfolio spanning data visualization, construction feasibility planning, and wellness policy analysis. Each project focused on closing the gap between technical output and stakeholder clarity.*
