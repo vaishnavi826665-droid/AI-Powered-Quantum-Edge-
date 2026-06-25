@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuantumEdge — AI Readiness Platform</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-logo">
+    <div class="nav-logo-icon">Q</div>
+    <span>QuantumEdge</span>
+  </div>
+  <div class="nav-links">
+    <a href="audit.html">Audit</a>
+    <a href="#">About</a>
+  </div>
+  <div class="nav-countdown">
+    <div class="countdown-label">TIME TO Q-DAY</div>
+    <div class="countdown-timer" id="countdown">0003:10:08:11:21:23</div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<main class="hero">
+  <div class="hero-badge">
+    <span class="badge-icon">⚡</span>
+    QUANTUM RISK ASSESSMENT
+  </div>
+
+  <!-- Atom animation -->
+  <div class="atom-wrap">
+    <div class="atom">
+      <div class="nucleus"></div>
+      <div class="orbit orbit-1"><div class="electron e1"></div></div>
+      <div class="orbit orbit-2"><div class="electron e2"></div></div>
+      <div class="orbit orbit-3"><div class="electron e3"></div></div>
+    </div>
+  </div>
+
+  <h1 class="hero-title">
+    Is Your Business<br>
+    <span class="hero-gradient">Quantum-Ready?</span>
+  </h1>
+  <p class="hero-sub">Get your free Risk Score in 30 seconds. Our AI-powered analysis<br>identifies quantum vulnerabilities and opportunities in your tech stack.</p>
+
+  <!-- Assessment Form -->
+  <div class="form-card">
+    <div class="form-card-bar"></div>
+
+    <div class="form-group">
+      <label>Company Name</label>
+      <input type="text" id="company" placeholder="e.g., Acme Technologies">
+    </div>
+
+    <div class="form-group">
+      <label>Industry</label>
+      <select id="industry">
+        <option value="" disabled selected>Select your industry</option>
+        <option>Financial Services</option>
+        <option>Healthcare</option>
+        <option>Technology</option>
+        <option>Government</option>
+        <option>Defense</option>
+        <option>Energy</option>
+        <option>Retail</option>
+        <option>Telecommunications</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Data Lifespan</label>
+      <select id="lifespan">
+        <option value="" disabled selected>How long must your data stay secure?</option>
+        <option value="short">Less than 5 years</option>
+        <option value="medium">5–10 years</option>
+        <option value="long">10–25 years</option>
+        <option value="vlong">25+ years</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Crown Jewel Asset</label>
+      <input type="text" id="asset" placeholder="e.g., Customer Data, Patents, Financial Records">
+    </div>
+
+    <div class="form-group">
+      <label>Primary Cloud Provider</label>
+      <select id="cloud">
+        <option value="" disabled selected>Select your cloud provider</option>
+        <option>AWS</option>
+        <option>Google Cloud</option>
+        <option>Microsoft Azure</option>
+        <option>On-premise</option>
+        <option>Hybrid</option>
+        <option>Other</option>
+      </select>
+    </div>
+
+    <button class="btn-generate" onclick="generate()">Generate Risk Report →</button>
+  </div>
+
+  <!-- Feature pills -->
+  <div class="hero-pills">
+    <div class="pill">🛡 AI-Powered Analysis</div>
+    <div class="pill">📊 Instant Q-Score</div>
+    <div class="pill">⚡ Actionable Insights</div>
+  </div>
+</main>
+
+<script src="countdown.js"></script>
+<script>
+function generate() {
+  const company = document.getElementById('company').value.trim() || 'Your Company';
+  const industry = document.getElementById('industry').value || 'Technology';
+  const lifespan = document.getElementById('lifespan').value || 'medium';
+  const asset = document.getElementById('asset').value.trim() || 'Customer Data';
+  const cloud = document.getElementById('cloud').value || 'AWS';
+
+  const params = new URLSearchParams({ company, industry, lifespan, asset, cloud });
+  window.location.href = 'report.html?' + params.toString();
+}
+</script>
+</body>
+</html>
