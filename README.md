@@ -22,8 +22,6 @@ The sidebar communicated not just location but status — which findings had bee
 **Visual hierarchy that doesn't require a legend**  
 Risk levels, readiness scores, and category tags were encoded through typography weight, color, and position — not through tooltips or icon keys that add cognitive load.
 
-**Ad-hoc query views**  
-Beyond the structured report pages, a secondary view let stakeholders ask custom questions across the dataset. The interface surfaced findings as readable cards, not raw table rows.
 
 ---
 
