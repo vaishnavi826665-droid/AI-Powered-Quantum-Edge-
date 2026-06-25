@@ -36,7 +36,7 @@ Risk levels, readiness scores, and category tags were encoded through typography
 
 ## Live UI preview
 
-→ See [https://quantum-edge-audit-flow.base44.app) for a working front-end recreation of the report page layout.
+→ See (https://quantum-edge-audit-flow.base44.app) .
 
 ---
 
